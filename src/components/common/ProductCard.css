@@ -1,0 +1,32 @@
+.productCardContainer {
+  border: solid 1.7px;
+  border-radius: 5px;
+  width: 23rem;
+  height: 38rem;
+
+  padding: 1rem;
+  margin: 20px auto;
+  text-align: center;
+}
+.productCardContainer img {
+  width: 150px;
+  height: 210px;
+  border-radius: 10px;
+  border: solid 0.5px;
+  display: block;
+  margin: 10px auto;
+}
+.boton-detalles {
+  padding: 0.7rem 1.9rem;
+  font-size: 1.6rem;
+  margin: 0.8rem;
+  background-color: var(--terc-color);
+  color: var(--sec-color);
+  border: solid 1.5px;
+  border-radius: 6px;
+  font-family: inherit;
+  transition: 200ms;
+}
+.boton-detalles:hover {
+  background-color: var(--main-color);
+}

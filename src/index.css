@@ -1,0 +1,26 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --main-color: rgb(39, 91, 97);
+  --terc-color: rgba(39, 91, 97, 0.746);
+  --sec-color: rgb(228, 238, 237);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  background-color: var(--sec-color);
+  color: var(--main-color);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a, button, li {
+  cursor: pointer;
+}
