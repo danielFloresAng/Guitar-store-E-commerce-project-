@@ -28,15 +28,31 @@ export let products = [
   },
 ];
 
-
 export const getProducts = () => {
   return new Promise((resolve, reject) => {
-    if(products.length > 0){
+    if (products.length > 0) {
       setTimeout(() => {
-        resolve(products)
-      }, 3000);
+        resolve(products);
+      }, 1000);
     } else {
-      reject(console.log("Error"))
+      reject(console.log("No se encontraron los productos"));
     }
-  })
-}
+  });
+};
+
+export const getProduct = (id) => {
+  return new Promise((resolve, reject) => {
+    if (products.length > 0) {
+      const product = products.find((element) => element.id === id);
+      setTimeout(() => {
+        if (product) {
+          resolve(product);
+        } else {
+          reject("No se encontró el producto");
+        }
+      }, 1000);
+    } else {
+      reject("No se encontraron productos ");
+    }
+  });
+};
