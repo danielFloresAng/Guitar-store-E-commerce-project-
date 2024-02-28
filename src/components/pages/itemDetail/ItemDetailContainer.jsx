@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getProduct, getProducts } from "../../../productsMock";
+import { getProduct } from "../../../productsMock";
 import { ItemDetail } from "./ItemDetail";
 import { useParams } from "react-router-dom";
 
@@ -11,16 +11,10 @@ export const ItemDetailContainer = () => {
 
   useEffect(() => {
     getProduct(+id).then((response) => {
-      setProduct(response)
-      setIsLoading(false)
+      setProduct(response);
+      setIsLoading(false);
     });
-  }, [id]);
+  }, []);
 
-
-  return(
-    <>
-    {isLoading ? <h3>Loading...</h3> : <ItemDetail product={product}/>}
-    </>
-  )
-
+  return <>{isLoading ? <h3>Cargando...</h3> : <ItemDetail {...product} />}</>;
 };

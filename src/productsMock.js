@@ -40,19 +40,22 @@ export const getProducts = () => {
   });
 };
 
-export const getProduct = (id) => {
+export const getProduct = (productId) => {
   return new Promise((resolve, reject) => {
-    if (products.length > 0) {
-      const product = products.find((element) => element.id === id);
-      setTimeout(() => {
+    setTimeout(() => {
+      if (products.length > 0) {
+        const product = products.find(
+          (productObject) => productObject.id === productId
+        );
+
         if (product) {
           resolve(product);
         } else {
-          reject("No se encontró el producto");
+          reject("Producto no encontrado");
         }
-      }, 1000);
-    } else {
-      reject("No se encontraron productos ");
-    }
+      } else {
+        reject("Productos no encontrados");
+      }
+    }, 1000);
   });
 };

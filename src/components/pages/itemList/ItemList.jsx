@@ -15,10 +15,10 @@ export const ItemList = ({elements}) => {
 						price={price}
 						stock={stock}
 						category={category}
+						id={id}
 					/>
 					)
 					
-
 				})
 			}
 		</div>
