@@ -10,21 +10,6 @@
   border-radius: 5px;
   margin: 1rem;
 }
-.add-cart-button {
-  padding: 0.9rem 1.9rem;
-  font-size: 1.6rem;
-  margin: 0.8rem auto;
-  background-color: var(--terc-color);
-  color: var(--sec-color);
-  border: solid 1.5px;
-  border-radius: 6px;
-  font-family: inherit;
-  transition: 200ms;
-  width: 60%;
-}
-.add-cart-button:hover {
-  background-color: var(--main-color);
-}
 .img-info-container {
   display: flex;
   justify-content: space-between;

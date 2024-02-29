@@ -1,3 +1,6 @@
+import { products } from "../../../productsMock";
+import { ItemCount } from "../../common/itemCount/ItemCount";
+import { ItemCountContainer } from "../../common/itemCount/ItemCountContainer";
 import "./ItemDetail.css";
 
 export const ItemDetail = ({
@@ -21,8 +24,8 @@ export const ItemDetail = ({
           <h4>Precio: {price}</h4>
         </div>
       </div>
-
-      <button className="add-cart-button">Agregar al carrito</button>
+      <ItemCountContainer stock={stock}/>
+      
     </div>
   );
 };

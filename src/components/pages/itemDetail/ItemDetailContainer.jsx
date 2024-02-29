@@ -14,7 +14,7 @@ export const ItemDetailContainer = () => {
       setProduct(response);
       setIsLoading(false);
     });
-  }, []);
+  }, [id]);
 
-  return <>{isLoading ? <h3>Cargando...</h3> : <ItemDetail {...product} />}</>;
+  return <>{isLoading ? <h3></h3> : <ItemDetail {...product} />}</>;
 };

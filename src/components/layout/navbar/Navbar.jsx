@@ -12,7 +12,7 @@ export const Navbar = () => {
       <nav className="navBar">
         <ul>
           <Link to="/">
-            <li>Home</li>
+            <li className="all-instruments">Todos los instrumentos</li>
           </Link>
           <Link to={`/category/Solid`}>
             <li>Solid</li>
@@ -20,7 +20,9 @@ export const Navbar = () => {
           <Link to={"/category/Semi-hollow"}>
             <li>Semi-hollow</li>
           </Link>
-          <li>Products</li>
+          <Link to={"/category/Acoustic"}>
+            <li>Acoustic</li>
+          </Link>
         </ul>
       </nav>
       <Link to="/cart">
