@@ -1,0 +1,13 @@
+.cart-widget-container {
+  padding: 1rem;
+  display: flex;
+  font-size: 2.4rem;
+  transition: 200ms;
+}
+.cart-widget-container p {
+  margin-left: 0.8rem;
+  font-size: 1.8rem;
+}
+.cart-widget-container:hover {
+  font-size: 2.6rem;
+}
