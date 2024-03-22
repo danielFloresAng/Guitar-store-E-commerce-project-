@@ -4,16 +4,7 @@
   margin: 1rem auto;
   padding: 2rem;
 }
-.item-detail-container img {
-  width: 18rem;
-  height: 28rem;
-  border-radius: 5px;
-  margin: 1rem;
-}
-.img-info-container {
-  display: flex;
-  justify-content: space-between;
-}
+
 .info-detail {
   display: flex;
   flex-direction: column;
@@ -21,4 +12,10 @@
   border: solid;
   padding: 1rem 5rem 1rem 2rem;
   height: 12rem;
+}
+.unidades-en-carrito {
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: underline;
 }

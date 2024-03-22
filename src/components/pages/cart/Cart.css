@@ -1,0 +1,41 @@
+.boton-eliminar-producto {
+  padding: 0.3rem 0.8rem;
+  font-size: 1.6rem;
+  margin: 0.2rem 0.2rem;
+  background-color: var(--sec-color);
+  color: var(--terc-color);
+  border: solid 1.5px;
+  border-radius: 6px;
+  font-family: inherit;
+  transition: 100ms;
+}
+.boton-eliminar-producto:hover {
+  background-color: var(--terc-color);
+  color: var(--sec-color);
+}
+.boton-finalizar-compra {
+  padding: 0.7rem 1.8rem;
+  font-size: 2rem;
+  margin: 0.4rem 0.2rem;
+  background-color: var(--main-color);
+  color: var(--sec-color);
+  border: solid 1.5px var(--sec-color);
+  border-radius: 6px;
+  font-family: inherit;
+  transition: 200ms;
+}
+.boton-finalizar-compra:hover {
+  font-size: 2.3rem;
+}
+.cuenta-total {
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+.cuenta-total span {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.cart-container {
+  padding: 2rem;
+}

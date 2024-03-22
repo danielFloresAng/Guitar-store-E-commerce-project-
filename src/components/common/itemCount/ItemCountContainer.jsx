@@ -2,9 +2,8 @@ import { useState } from "react";
 import { ItemCount } from "./ItemCount";
 import Swal from "sweetalert2";
 
-
-export const ItemCountContainer = ({ stock }) => {
-  const [counter, setCounter] = useState(0);
+export const ItemCountContainer = ({ stock, onAdd, initialValue = 1 }) => {
+  const [counter, setCounter] = useState(initialValue);
 
   const add = () => {
     if (counter < stock) {
@@ -26,12 +25,9 @@ export const ItemCountContainer = ({ stock }) => {
         icon: "warning",
         title: "Oops...",
         text: "Cantidad no válida",
-      })
+      });
     }
   };
-  const reset = () => {
-    setCounter(0);
-  };
 
-  return <ItemCount sus={sus} counter={counter} add={add} reset={reset} />;
+  return <ItemCount sus={sus} counter={counter} onAdd={onAdd} add={add} />;
 };

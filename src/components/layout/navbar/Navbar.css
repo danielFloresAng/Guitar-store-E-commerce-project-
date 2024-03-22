@@ -1,11 +1,8 @@
 .navBar {
-  display: flex;
   width: 60%;
   padding: 0.4rem;
 }
 .navBar ul {
-  display: flex;
-  justify-content: space-evenly;
   list-style: none;
   width: 100%;
 }
@@ -14,6 +11,8 @@
   border-radius: 10px;
   padding: 0.6rem;
   transition: 200ms;
+  margin: 4px;
+  text-align: center;
 }
 .navBar li:hover {
   font-size: 1.8rem;
@@ -24,9 +23,14 @@
   border-bottom: solid;
   display: flex;
   justify-content: space-around;
-  padding: 1rem;
+  padding: 1.3rem;
 }
 .all-instruments {
   background-color: var(--terc-color);
   color: var(--sec-color);
+}
+@media (min-width: 600px) {
+  .navBar ul {
+    display: flex;
+  }
 }

@@ -12,16 +12,19 @@ export const Navbar = () => {
       <nav className="navBar">
         <ul>
           <Link to="/">
-            <li className="all-instruments">Todos los instrumentos</li>
+            <li className="all-instruments">Our products</li>
           </Link>
-          <Link to={`/category/Solid`}>
-            <li>Solid</li>
+          <Link to={`/category/guitars`}>
+            <li>Guitars</li>
           </Link>
-          <Link to={"/category/Semi-hollow"}>
-            <li>Semi-hollow</li>
+          <Link to={"/category/amps"}>
+            <li>Amps</li>
           </Link>
-          <Link to={"/category/Acoustic"}>
-            <li>Acoustic</li>
+          <Link to={"/category/strings"}>
+            <li>Strings</li>
+          </Link>
+          <Link to={"/category/pedalEffects"}>
+            <li>Guitar effects pedals</li>
           </Link>
         </ul>
       </nav>

@@ -12,14 +12,20 @@ export const ProductCard = ({
 }) => {
   return (
     <div className="productCardContainer">
-      <img src={img} alt="" />
-      <h2>Model: {title}</h2>
-      <h4>Description: {description}</h4>
-      <p>Price: ${price} USD</p>
+      <div className="img-container-card">
+        <img src={img} alt="" />
+      </div>
+      <p>
+        <span>Model:</span> {title}
+      </p>
+      <p>
+        <span>About:</span> {description}
+      </p>
+      <span> ${price} USD</span>
       <p>In stock: {stock}</p>
-      <h3>Type: {category}</h3>
+
       <Link to={`/productDetail/${id}`}>
-        <button className="boton-detalles">Detalles</button>
+        <button className="boton-detalles">Details</button>
       </Link>
     </div>
   );

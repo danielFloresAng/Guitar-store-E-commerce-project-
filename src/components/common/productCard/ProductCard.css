@@ -2,24 +2,36 @@
   border: solid 1.7px;
   border-radius: 5px;
   width: 23rem;
-  
-
+  line-height: 2.2rem;
   padding: 1rem;
-  margin: 20px auto;
-  text-align: center;
+  margin: 10px 3px;
+  text-align: left;
 }
-.productCardContainer img {
-  width: 150px;
-  height: 210px;
+.img-container-card {
+  max-width: 150px;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+}
+.productCardContainer span {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.productCardContainer p {
+  margin: 1rem auto;
+}
+.img-container-card img {
+  transform: scale(90%);
   border-radius: 10px;
   border: solid 0.5px;
   display: block;
-  margin: 10px auto;
+  max-width: 150px;
+  max-height: 210px;
 }
 .boton-detalles {
   padding: 0.7rem 1.9rem;
   font-size: 1.6rem;
-  margin: 0.8rem;
+  margin: 0.8rem auto;
   background-color: var(--terc-color);
   color: var(--sec-color);
   border: solid 1.5px;

@@ -1,5 +1,3 @@
-import { products } from "../../../productsMock";
-import { ItemCount } from "../../common/itemCount/ItemCount";
 import { ItemCountContainer } from "../../common/itemCount/ItemCountContainer";
 import "./ItemDetail.css";
 
@@ -11,21 +9,33 @@ export const ItemDetail = ({
   price,
   stock,
   category,
+  onAdd,
+  initialValue,
 }) => {
-  console.log();
   return (
-    <div className="item-detail-container" key={id}>
-      <div className="img-info-container">
+    <div className="productCardContainer" key={id}>
+      <div className="img-container-card">
         <img src={img} alt="" />
-
-        <div className="info-detail">
-          <h2>Modelo: {title}</h2>
-          <p>Descripción: {description}</p>
-          <h4>Precio: {price}</h4>
-        </div>
       </div>
-      <ItemCountContainer stock={stock}/>
-      
+
+      <p>
+        <span>Model:</span> {title}
+      </p>
+      <p>
+        <span>Description:</span> {description}
+      </p>
+      <span> ${price} USD</span>
+
+      {initialValue && (
+        <p className="unidades-en-carrito">
+          Tienes {initialValue} unidades tu carrito
+        </p>
+      )}
+      <ItemCountContainer
+        stock={stock}
+        initialValue={initialValue}
+        onAdd={onAdd}
+      />
     </div>
   );
 };
