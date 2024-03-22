@@ -38,7 +38,6 @@ export const CheckoutContainer = () => {
   };
 
   const saveUserData = (e) => {
-    console.log(e);
     setUserData({
       ...userData,
       [e.target.name]: e.target.value,
